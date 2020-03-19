@@ -10,3 +10,8 @@ export const addEvent = (id, name, lastName) => ({
         date,
     },
 }); 
+
+export const deleteEvent = (id) => ({
+    type: types.EVENT_DELETED,
+    payload: { id },
+}); 
